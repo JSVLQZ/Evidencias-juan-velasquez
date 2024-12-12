@@ -1,0 +1,13 @@
+cadena [30] mi_madre
+entero padre
+inicio
+escriba "ejercicio para imgresar mi información"
+llamar nueva_linea
+escriba "ingresa tu nombre"
+llamar nueva_linea
+lea mi_madre
+escriba "ingresa tu edad"
+llamar nueva_linea
+lea padre viejo
+escriba "hola",mi_madre","tienes",padre",de edad"
+fin

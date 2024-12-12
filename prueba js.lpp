@@ -1,0 +1,31 @@
+entero edad
+cadena [20] sexo
+inicio
+	escriba "ingresar sexo"
+	llamar nueva_linea
+	lea sexo
+	si(sexo="femenino")entonces
+	escriba "puede ingresar al sanitario para mujeres"
+	sino 
+		si(sexo="masculino")entonces
+		escriba "puede ingresar al sanitario para hombres"
+		
+
+	fin si
+	llamar nueva_linea
+	lea sexo
+	si(sexo="masculino")entonces
+	escriba "puede ingresar al sanitario para hombres"
+	sino
+	escriba "."
+	fin si
+	llamar nueva_linea
+	escriba "ingresar edad"
+	lea edad
+	si(edad >5)entonces
+	escriba "puede usar el sanitario para niños"
+	sino
+		escriba "puede usar el sanitario con la supervision de un adulto"
+	fin si
+fin si
+fin

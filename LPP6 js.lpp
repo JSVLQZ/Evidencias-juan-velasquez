@@ -1,0 +1,18 @@
+cadena [35] pancho
+entero numero1,numero2, resultado, resta, division
+inicio
+escriba "ejercicio para ingresar mi informacion"
+llamar nueva_linea
+escriba "ingresa tu numero"
+llamar nueva_linea
+lea pancho
+escriba "ingresar el primer numero"
+lea numero1
+escriba "ingresa el segundo numero"
+llamar nueva_linea
+resultado<- numero1+numero2
+escriba "hola", pancho, "la suma es", resultado
+llamar nueva_linea
+resta<-numero1-numero2
+llamar nueva_linea
+escriba "el resultado de la resta es:"  

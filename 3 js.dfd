@@ -1,0 +1,41 @@
+ Dfd (c)
+1
+1
+1
+0
+0
+4
+1
+18
+ "ingrese su edad"
+5
+1
+4
+edad
+7
+0
+1
+12
+ (edad >=18)
+7
+0
+1
+11
+ (edad >11)
+4
+1
+18
+ "sigue creciendo"
+13
+4
+1
+37
+ "bienvenido a cine para adolecentes"
+13
+13
+4
+1
+33
+ "bienvenido a cine para adultos"
+13
+1

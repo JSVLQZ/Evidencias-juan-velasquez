@@ -1,0 +1,9 @@
+entero z, numero
+inicio
+llamar inicializar_aleatorio()
+para numero<-1 hasta 3 haga
+z <-aleatorio()
+llamar nueva_linea
+escriba "el nuevo numero aleatorio es:", z
+fin para 
+fin

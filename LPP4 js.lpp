@@ -1,0 +1,14 @@
+entero edad
+cadena [20]usuario
+cadena[20]clave
+
+inicio
+escriba "ingrese su usuario y clave"
+lea usuario
+lea clave
+si (usuario="casa")y (clave="raza") entonces
+escriba "bienvenido"
+sino
+escriba "usuorio o clave no valida"
+fin si
+fin

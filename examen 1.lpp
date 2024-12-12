@@ -1,0 +1,93 @@
+arreglo [10] de entero numero
+caracter terminar
+cadena [20] nombre, tecnico, documento
+entero identificacion, n1, n, n2 , r, notas, promedios, descanso, fila, columna, temporal
+inicio 
+repita
+		escriba " ingrese su documento "
+		llamar  nueva_linea
+		llamar nueva_linea
+		lea documento
+		
+		escriba " ingrese su nombre completo "
+		llamar nueva_linea
+		llamar nueva_linea
+		lea nombre
+		
+		escriba " numero de identificacion "
+		llamar nueva_linea
+		llamar nueva_linea
+		lea identificacion
+		
+		escriba " tecnico al que pertenece "
+		llamar nueva_linea
+		llamar nueva_linea
+		lea tecnico
+		
+		escriba " bienvenido "
+		llamar nueva_linea
+		llamar nueva_linea
+		
+		escriba " para seleccionar la opcion notas, ingrese el numero uno "
+		llamar nueva_linea
+		llamar nueva_linea
+		
+		escriba " para seleccionar la opcion promedios, ingrese el numero dos "
+		llamar nueva_linea
+		llamar nueva_linea
+		
+		escriba " para seleccionar la opcion por encima del promedio, ingrese el numero tres "
+		llamar nueva_linea
+		llamar nueva_linea
+		
+		escriba " para seleccionar la opcion salir del programa, ingrese el numero cuatro"
+		llamar nueva_linea
+		llamar nueva_linea
+		
+			lea n
+			caso n
+			1: escriba " ver notas "
+			llamar nueva_linea
+			lea n1
+				si (n1<75) entonces
+				escriba " lo siento debes recuperar "
+				fin si
+				
+				si (n1>=75) entonces
+				escriba " muy bien pasaste la materia "
+				fin si
+			2:	escriba "Ingresa las calificaciones de los estudiantes"
+				llamar nueva_linea
+			para descanso<-1 hasta 5 haga
+				llamar nueva_linea
+				escriba "ingrese el numero para la posicion [",descanso,"]"
+				lea numero[descanso]
+				llamar nueva_linea
+			fin para
+
+				llamar nueva_linea
+			para descanso<-1 hasta 5 haga
+				llamar nueva_linea
+				escriba "En la posicion [", descanso, "] usted ingreso el elemento", numero[descanso]
+			fin para
+	
+
+			para fila<-1 hasta 5 haga
+		para columna<- 1 hasta 5-fila haga
+				si (numero[columna]> numero[columna+1]) entonces
+					temporal<-numero[columna]
+					numero[columna]<-numero[columna+1]
+					numero[columna+1]<-temporal
+				fin si
+			fin para
+		fin para
+		fin caso
+	
+		para descanso<-1 hasta 5 haga
+			llamar nueva_linea
+			escriba "En la posicion [", descanso,"] estos serian los numeros ya organizados", numero[descanso]
+		fin para
+		
+		escriba " desea terminar"
+		hasta (terminar='t')
+fin
